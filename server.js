@@ -7,6 +7,9 @@ const app = express();
 //connect the Database
 connectDB();
 
+//middleware
+app.use(express.json({ extended: false }));
+
 app.get('/', (req, res) =>
     res.json({ msg: 'My Contact Api' }));
 
