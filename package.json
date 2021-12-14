@@ -1,7 +1,7 @@
 {
   "name": "cap5",
   "version": "1.0.0",
-  "description": "",
+  "description": "manage a list of contact's",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
