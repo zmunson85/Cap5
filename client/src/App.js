@@ -5,19 +5,23 @@ import About from './components/pages/About'
 import Home from './components/pages/Home'
 import './App.css';
 
+import ContactState from './context/contact/ContactState';
+
 const App = () => {
   return (
-    <Router>
-      <Fragment>
-        <Navbar />
-        <div className="container">
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/about' element={<About />} />
-          </Routes>
-        </div>
-      </Fragment>
-    </Router>
+    <ContactState>
+      <Router>
+        <Fragment>
+          <Navbar />
+          <div className="container">
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/about' element={<About />} />
+            </Routes>
+          </div>
+        </Fragment>
+      </Router>
+    </ContactState>
   );
 }
 
