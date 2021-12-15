@@ -18,8 +18,10 @@ const ContactFilter = () => {
     };
 
     return (
+
         <form onSubmit={(e) => e.preventDefault()}>
-            <input type='text' placeholder='Filter Contacts...' onChange={onChange} />
+            <h3 className='text-primary'><i className='text-dark' class="fas fa-search"></i> Look Up A Contact </h3>
+            <input type='text' placeholder='type here...' onChange={onChange} />
         </form>
     );
 };

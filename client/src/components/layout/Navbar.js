@@ -8,7 +8,6 @@ const Navbar = ({ title, icon }) => {
     const [authState, authDispatch] = useAuth();
     const { isAuthenticated, user } = authState;
 
-    // we just need the contact dispatch without state.
     const contactDispatch = useContacts()[1];
 
     const onLogout = () => {
@@ -18,10 +17,10 @@ const Navbar = ({ title, icon }) => {
 
     const authLinks = (
         <Fragment>
-            <li>Hello {user && user.name}</li>
+            <li style={{ marginRight: '40vw', fontSize: 'larger' }}>Hello {user && user.name}</li>
             <li>
                 <Link onClick={onLogout} to='/login'>
-                    <i className='fas fa-sign-out-alt' />{' '}
+                    <i style={{ fontSize: 'larger' }} className='fas fa-sign-out-alt' />{' '}
                     <span className='hide-sm'>Logout</span>
                 </Link>
             </li>

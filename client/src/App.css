@@ -2,8 +2,8 @@
 
 /* Global Styles */
 :root {
-    --primary-color: #003699;
-    --dark-color: #333333;
+    --primary-color: #060488;
+    --dark-color: #f75e17;
     --light-color: #f4f4f4;
     --danger-color: #dc3545;
     --success-color: #28a745;
@@ -95,6 +95,7 @@ img {
     padding: 1rem;
     border: #ccc 1px dotted;
     margin: 0.7rem 0;
+    border-radius: 1rem;
 }
 
 /* List */
@@ -194,6 +195,7 @@ img {
     margin-right: 0.5rem;
     transition: opacity 0.2s ease-in;
     outline: none;
+    border-radius: 1rem;
 }
 
 .btn-link {
@@ -296,6 +298,7 @@ img {
 /* Forms */
 input {
     margin: 1.2rem 0;
+    border-radius: 1rem;
 }
 
 .form-text {
@@ -368,6 +371,8 @@ table th {
 
 .navbar ul {
     display: flex;
+    color: var(--dark-color);
+    font-weight: 500;
 }
 
 .navbar a {
@@ -377,14 +382,14 @@ table th {
 }
 
 .navbar a:hover {
-    color: var(--light-color);
+    color: var(--dark-color);
 }
 
 .navbar .welcome span {
     margin-right: 0.6rem;
 }
 
-/* Animation (Add After) */
+/* Transition Group */
 .item-enter {
     opacity: 0;
 }
