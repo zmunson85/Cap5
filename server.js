@@ -10,9 +10,6 @@ connectDB();
 //middleware
 app.use(express.json({ extended: false }));
 
-app.get('/', (req, res) =>
-    res.json({ msg: 'My Contact Api' }));
-
 //api routes
 app.use('/api/users', require('./routes/users'));
 app.use('/api/auth', require('./routes/auth'));
