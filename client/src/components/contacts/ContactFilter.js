@@ -6,7 +6,7 @@ import {
 } from '../../context/contact/ContactState';
 
 const ContactFilter = () => {
-    // we just need the conact dispatch without state.
+    // need the contact dispatch without state.
     const contactDispatch = useContacts()[1];
 
     const onChange = (e) => {
