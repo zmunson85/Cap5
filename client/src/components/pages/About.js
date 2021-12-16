@@ -13,9 +13,6 @@ const About = () => {
                 One form will control all the data, you can see how we used react to make it a "reactive" user experience.
                 Full Stack Crud App, Create a contact List.
             </p>
-            <p className='bg-dark p'>
-                <strong>VSchool: </strong> CAPSTONE Level 5
-            </p>
         </div>
     )
 }
